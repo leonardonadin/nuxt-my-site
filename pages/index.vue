@@ -12,6 +12,21 @@
                             Full Stack Developer
                         </p>
                     </div>
+                    <div class="mt-5 xl:mt-10 text-center">
+                        <p class="text-white">
+                            You can find me on
+                        </p>
+                        <div class="flex justify-center gap-3">
+                            <a href="https://github.com/leonardonadin" target="_blank"
+                                class="text-white" title="Github">
+                                <Icon name="uil:github" size="2em" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/leonardo-nadin/" target="_blank"
+                                class="text-white" title="LinkedIn">
+                                <Icon name="uil:linkedin" size="2em" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
