@@ -13,7 +13,7 @@
                         </p>
                     </div>
                     <div class="mt-5 xl:mt-10 text-center">
-                        <p class="text-white">
+                        <p class="mb-3 text-white">
                             You can find me on
                         </p>
                         <div class="flex justify-center gap-3">
@@ -25,6 +25,37 @@
                                 class="text-white" title="LinkedIn">
                                 <Icon name="uil:linkedin" size="2em" />
                             </a>
+                        </div>
+                    </div>
+                    <div class="my-5 xl:mt-10 text-center">
+                        <p class="mb-3 text-white">
+                            And here are some of my projects
+                        </p>
+                        <div class="flex gap-3 justify-center">
+                            <div class="basis-1/2 xl:basis-1/4 bg-slate-100 relative rounded-xl p-8 dark:bg-slate-800">
+                                <h4 class="text-white font-bold">
+                                    Qual o App? <br />
+                                    <small>(Who is the app?)</small>
+                                </h4>
+                                <p class="text-white">
+                                    A website that helps you find out which app you are looking for, based on city and type of service.
+                                </p>
+                                <a href="https://qualoapp.com.br/" target="_blank" class="stretched-link"
+                                    title="Qual o App?">
+                                </a>
+                            </div>
+                            <div class="basis-1/2 xl:basis-1/4 bg-slate-100 relative rounded-xl p-8 dark:bg-slate-800">
+                                <h4 class="text-white font-bold">
+                                    Quero me mudar <br />
+                                    <small>(I want to move)</small>
+                                </h4>
+                                <p class="text-white">
+                                    A website that helps you find rental properties in the city you want to move to.
+                                </p>
+                                <a href="https://queromemudar.com.br/" target="_blank" class="stretched-link"
+                                    title="Quero me mudar">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

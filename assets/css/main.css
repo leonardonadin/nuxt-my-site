@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 .text-fill-transparent {
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.stretched-link::after {
+    content: "";
+    @apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
 }
