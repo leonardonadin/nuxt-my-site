@@ -11,30 +11,23 @@
         </p>
       </div>
 
-      <!-- Right Action Group (Sticker + Contact) -->
+      <!-- Right Action Group (Badge Sticker + Contact) -->
       <div class="flex items-center gap-3 flex-wrap justify-center">
-        <!-- BUY a NADIN Yellow Sticker -->
+        <!-- Vintage Retro Badge Sticker (non-hiring) -->
         <div class="bg-yellow-sticker text-ink px-2 py-1 border border-frame-ink font-ui font-bold text-xs uppercase flex items-center shadow-[1px_1px_0px_#000000]">
-          <span>HIRE a</span>
-          <span class="bg-purple-stripe text-white px-1 ml-1 text-[10px] tracking-tight">DEV</span>
-          <span class="ml-1 font-black">NADIN</span>
+          <span>LEONARDO</span>
+          <span class="bg-purple-stripe text-white px-1 ml-1 text-[10px] tracking-tight">.COM</span>
+          <span class="ml-1 font-black">1996</span>
         </div>
 
-        <!-- Red Phone / Contact Callout -->
+        <!-- Contact Email / Location Callout -->
         <a
-          v-if="contactLink"
-          :href="contactLink"
-          target="_blank"
-          class="font-ui font-bold text-sm md:text-base text-primary hover:text-red-400 no-underline whitespace-nowrap bg-black px-2 py-0.5 border border-primary"
+          :href="`mailto:${email}`"
+          class="font-ui font-bold text-xs sm:text-sm text-primary hover:text-red-400 no-underline whitespace-nowrap bg-black px-2 py-0.5 border border-primary"
+          :title="`Enviar e-mail para ${email}`"
         >
-          {{ contactText }}
+          {{ email }}
         </a>
-        <span
-          v-else
-          class="font-ui font-bold text-sm md:text-base text-primary whitespace-nowrap bg-black px-2 py-0.5 border border-primary"
-        >
-          {{ contactText }}
-        </span>
       </div>
     </div>
   </header>
@@ -44,14 +37,12 @@
 interface Props {
   title?: string;
   subtitle?: string;
-  contactText?: string;
-  contactLink?: string;
+  email?: string;
 }
 
 withDefaults(defineProps<Props>(), {
   title: 'LEONARDO NADIN',
-  subtitle: 'BUILD YOUR WEB APPLICATIONS. ONLINE.',
-  contactText: '1-800-DEV-NADIN',
-  contactLink: 'https://www.linkedin.com/in/leonardo-nadin/'
+  subtitle: 'LÍDER TÉCNICO · DESENVOLVEDOR FULL STACK · LARAVEL · JS',
+  email: 'leo.nadin@hotmail.com.br'
 });
 </script>

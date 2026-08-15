@@ -1,142 +1,243 @@
 <template>
   <VintagePageFrame>
-    <!-- Top Black Banner with Yellow Sticker & Phone/Contact Callout -->
+    <!-- Top Black Banner with Vintage Badge & Contact Email -->
     <VintageBanner
       title="LEONARDO NADIN"
-      subtitle="FULL STACK DEVELOPER · PORTFOLIO & CATALOG"
-      contact-text="1-800-DEV-NADIN"
-      contact-link="https://www.linkedin.com/in/leonardo-nadin/"
+      subtitle="LÍDER TÉCNICO · DESENVOLVEDOR FULL STACK · LARAVEL · JS"
+      email="leo.nadin@hotmail.com.br"
     />
 
-    <!-- Main Content Area: 2-Column Catalog Spread -->
+    <!-- Main Content Area: 2-Column Catalog Layout -->
     <main class="flex-1 p-3 sm:p-4 md:p-6">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start">
         
-        <!-- LEFT RAIL (~30% / 4 columns on md) -->
+        <!-- LEFT RAIL (~33% / 4 columns on md) -->
         <aside class="md:col-span-4 space-y-4">
-          <!-- Developer Quick Bio Box -->
+          <!-- Profile & Location Box -->
           <div class="border border-frame-ink bg-canvas p-3">
-            <div class="bg-frame-ink text-white px-2 py-1 font-ui font-bold text-xs uppercase mb-2">
-              SYSTEM OPERATOR PROFILE
+            <div class="bg-frame-ink text-white px-2 py-1 font-ui font-bold text-xs uppercase mb-2 flex items-center justify-between">
+              <span>SYSTEM OPERATOR</span>
+              <span class="text-yellow-sticker text-[10px]">VER. 1996</span>
             </div>
-            <p class="font-serif text-sm leading-relaxed text-ink mb-3">
-              <strong>Leonardo Nadin</strong> is a Full Stack Developer specialized in architecting responsive web applications, modern APIs, and clean digital experiences.
-            </p>
+            
+            <div class="space-y-1 mb-3">
+              <h2 class="font-display font-black text-lg sm:text-xl text-ink leading-tight">
+                Leonardo Nadin
+              </h2>
+              <p class="font-ui text-xs font-bold text-gray-700">
+                Chapecó, Santa Catarina, Brasil
+              </p>
+              <p class="font-serif text-xs text-gray-800 italic pt-1">
+                Líder Técnico &bull; Desenvolvedor Full Stack &bull; Especialista Laravel, PHP e JavaScript
+              </p>
+            </div>
 
-            <!-- Vintage Directory Links -->
+            <!-- Directory Links Grid -->
             <div class="grid grid-cols-2 gap-1 font-ui text-xs font-bold pt-2 border-t border-gray-300">
+              <a
+                href="https://www.linkedin.com/in/leonardonadin/"
+                target="_blank"
+                class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
+                title="LinkedIn"
+              >
+                <Icon name="uil:linkedin" size="1.1em" />
+                <span>LINKEDIN</span>
+              </a>
               <a
                 href="https://github.com/leonardonadin"
                 target="_blank"
                 class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
+                title="GitHub"
               >
-                <Icon name="uil:github" size="1.2em" />
+                <Icon name="uil:github" size="1.1em" />
                 <span>GITHUB</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/leonardo-nadin/"
+                href="https://medium.com/@nadin.leonardo"
                 target="_blank"
                 class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
+                title="Medium Blog"
               >
-                <Icon name="uil:linkedin" size="1.2em" />
-                <span>LINKEDIN</span>
+                <Icon name="uil:medium-m" size="1.1em" />
+                <span>BLOG</span>
+              </a>
+              <a
+                href="mailto:leo.nadin@hotmail.com.br"
+                class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
+                title="Enviar E-mail"
+              >
+                <Icon name="uil:envelope" size="1.1em" />
+                <span>E-MAIL</span>
               </a>
             </div>
           </div>
 
-          <!-- Vivid Dell Red CTA Block -->
+          <!-- Red Panel: Professional Summary / Manifesto -->
           <VintageCtaBlock
-            title="DIRECT VALUE PROPOSITION"
-            text="Looking for robust full-stack engineering? From interactive client-side interfaces to resilient backend APIs, I deliver reliable, high-performance web software ready for production."
+            title="RESUMO PROFISSIONAL"
           >
-            <p class="mb-3 font-serif text-sm">
-              Looking for robust full-stack engineering? From interactive client-side interfaces to resilient backend APIs, I deliver reliable, high-performance web software ready for production.
+            <p class="font-serif text-sm leading-relaxed text-white">
+              Desenvolvedor Full Stack com mais de uma década de experiência criando soluções digitais, principalmente com PHP e JavaScript/TypeScript.
             </p>
-            <div class="pt-2 border-t border-white/30 text-center">
-              <a
-                href="https://www.linkedin.com/in/leonardo-nadin/"
-                target="_blank"
-                class="vintage-bevel-button inline-block w-full text-center bg-white text-ink hover:bg-yellow-sticker font-ui font-bold text-xs uppercase py-1.5 no-underline"
-              >
-                GET IN TOUCH &raquo;
-              </a>
-            </div>
+            <p class="font-serif text-sm leading-relaxed text-white mt-2">
+              Foco em arquitetura de software, Laravel, sistemas de alta confiabilidade, mensageria com RabbitMQ, boas práticas e código limpo que resolve problemas reais de ponta a ponta.
+            </p>
           </VintageCtaBlock>
 
-          <!-- Vintage Quality Seal (Dell PC Magazine Readers' Choice style) -->
-          <div class="border border-frame-ink bg-gray-50 p-4 text-center">
-            <div class="inline-flex flex-col items-center justify-center w-24 h-24 rounded-full bg-primary text-white border-2 border-frame-ink p-2 mx-auto shadow-[2px_2px_0px_#000000]">
-              <span class="font-ui font-black text-[9px] uppercase tracking-tighter">RELIABILITY</span>
-              <span class="font-display font-black text-xs uppercase leading-tight my-0.5 text-yellow-sticker">100%</span>
-              <span class="font-ui font-bold text-[8px] uppercase tracking-tighter text-center">CLEAN CODE</span>
+          <!-- Education & Formação Acadêmica Box -->
+          <div class="border border-frame-ink bg-canvas p-3 text-ink">
+            <div class="bg-frame-ink text-white px-2 py-1 font-ui font-bold text-xs uppercase mb-2">
+              FORMAÇÃO ACADÊMICA
+            </div>
+            
+            <div class="space-y-3 font-serif text-xs">
+              <div class="border-b border-gray-300 pb-2">
+                <p class="font-ui font-bold text-ink">MBA em Arquitetura Full Cycle</p>
+                <p class="text-gray-700">Full Cycle &bull; 2026 &ndash; 2027</p>
+              </div>
+              <div class="border-b border-gray-300 pb-2">
+                <p class="font-ui font-bold text-ink">Bacharel em Ciência da Computação</p>
+                <p class="text-gray-700">Universidade do Oeste de SC &bull; 2014 &ndash; 2018</p>
+              </div>
+              <div>
+                <p class="font-ui font-bold text-ink">Técnico em Informática</p>
+                <p class="text-gray-700">EEB Prof Elza Mancelos de Moura &bull; 2010 &ndash; 2013</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificações & Idiomas Box -->
+          <div class="border border-frame-ink bg-gray-50 p-3 text-ink">
+            <div class="bg-frame-ink text-white px-2 py-1 font-ui font-bold text-xs uppercase mb-2">
+              CERTIFICAÇÕES & IDIOMAS
+            </div>
+            
+            <ul class="list-disc list-inside font-serif text-xs space-y-1 text-gray-800">
+              <li>Fundamentos de Arquitetura de Software</li>
+              <li>Docker &amp; Containers</li>
+              <li>RabbitMQ &amp; Mensageria</li>
+              <li>Electron: Apps Desktop com Web Tech</li>
+              <li>Cordova &amp; PhoneGap Mobile</li>
+            </ul>
+
+            <div class="mt-3 pt-2 border-t border-gray-300 font-serif text-xs">
+              <p><strong>Português:</strong> Nativo</p>
+              <p><strong>Inglês:</strong> Profissional (Professional Working)</p>
+            </div>
+          </div>
+
+          <!-- Quality Seal Badge -->
+          <div class="border border-frame-ink bg-canvas p-3 text-center">
+            <div class="inline-flex flex-col items-center justify-center w-20 h-20 rounded-full bg-primary text-white border-2 border-frame-ink p-2 mx-auto shadow-[2px_2px_0px_#000000]">
+              <span class="font-ui font-black text-[8px] uppercase tracking-tighter">EXPERIÊNCIA</span>
+              <span class="font-display font-black text-xs uppercase leading-tight my-0.5 text-yellow-sticker">+10 ANOS</span>
+              <span class="font-ui font-bold text-[7px] uppercase tracking-tighter text-center">FULL STACK</span>
             </div>
             <p class="font-serif text-xs text-ink mt-2">
-              Standard-compliant HTML5, Vue, TypeScript, & Responsive Layouts.
+              Qualidade de software, Clean Architecture e compromisso com resultados.
             </p>
           </div>
         </aside>
 
-        <!-- RIGHT RAIL (~70% / 8 columns on md) -->
-        <section id="projects" class="md:col-span-8 space-y-6">
-          <!-- SECTION 1: Featured Applications -->
-          <div>
+        <!-- RIGHT RAIL (~67% / 8 columns on md) -->
+        <section class="md:col-span-8 space-y-6">
+          
+          <!-- SECTION 1: Experiência Profissional -->
+          <div id="experiencia">
             <VintageEyebrow
-              title="FLAGSHIP APPLICATIONS"
-              tag="ONLINE CATALOG"
+              title="EXPERIÊNCIA PROFISSIONAL"
+              tag="TRAJETÓRIA"
               tint="olive"
             />
             
             <div class="mt-3 space-y-3">
-              <!-- Qual o App? Ribbon Card -->
+              <!-- IXC Soft -->
               <VintageRibbonCard
-                title="QUAL O APP?"
-                subtitle="Who is the app?"
-                description="A specialized web utility designed to help users discover exactly which delivery, transportation, and service applications operate in their target city."
-                url="https://qualoapp.com.br/"
+                title="IXC SOFT"
+                subtitle="Líder Técnico & Desenvolvedor de Sistemas · 2024 - Presente · Chapecó/SC"
+                description="Atuação como Líder Técnico (Jan/2026 - Presente) e Desenvolvedor de Sistemas (Jul/2024 - Presente). Liderança técnica de equipes de desenvolvimento, sustentação e evolução de sistemas robustos, definição de padrões de arquitetura, mensageria e otimização de performance."
                 tint="sage"
-                badge-text="NEW!"
+                badge-text="ATUAL"
               />
 
-              <!-- Quero me mudar Ribbon Card -->
+              <!-- Alcance Tecnologia -->
               <VintageRibbonCard
-                title="QUERO ME MUDAR"
-                subtitle="I want to move"
-                description="A streamlined portal assisting individuals and families in researching rental properties, neighborhood metrics, and relocation services across cities."
-                url="https://queromemudar.com.br/"
+                title="ALCANCE TECNOLOGIA"
+                subtitle="Desenvolvedor Full Stack · 2014 - 2024 (10 anos 1 mês)"
+                description="Uma década de liderança e desenvolvimento full stack: construção de sistemas web e e-commerces em Laravel integrados a ERPs, gateways de pagamento e frete; REST APIs; interfaces em Vue, React e Alpine.js; apps Desktop em Electron com SQLServer; mobile em Ionic; treinamento e mentoria de novos colaboradores; manutenção de bancos MySQL e servidores Linux (AWS, VPS, cPanel)."
                 tint="peach"
               />
             </div>
           </div>
 
-          <!-- SECTION 2: Technical Specifications & Capabilities -->
-          <div>
+          <!-- SECTION 2: Projetos em Destaque -->
+          <div id="projetos">
             <VintageEyebrow
-              title="ENGINEERING SPECIFICATIONS"
-              tag="SYSTEM ARCHITECTURE"
+              title="APLICAÇÕES & PROJETOS"
+              tag="PORTFOLIO"
               tint="salmon"
             />
-
+            
             <div class="mt-3 space-y-3">
-              <!-- Full Stack Card -->
+              <!-- Qual o App? -->
               <VintageRibbonCard
-                title="FRONTEND & BACKEND ARCHITECTURE"
-                description="Engineered with Nuxt 3, Vue.js, TypeScript, Node.js, and modern CSS architectures. Focused on blazing load times, resilient state management, and ergonomic component hierarchies."
-                tint="periwinkle"
+                title="QUAL O APP?"
+                subtitle="Guia de Aplicativos por Cidade"
+                description="Plataforma que identifica e categoriza quais aplicativos de transporte, delivery e serviços operam em cada cidade do Brasil, com busca inteligente e dados geo-localizados."
+                url="https://qualoapp.com.br/"
+                tint="lime"
+                badge-text="PROJETO"
               />
 
-              <!-- Infrastructure Card -->
+              <!-- Quero me mudar -->
               <VintageRibbonCard
-                title="DATA & INFRASTRUCTURE SYSTEMS"
-                description="Relational database schema modeling with PostgreSQL/MySQL, containerized workflows with Docker, and automated CI/CD deployment pipelines on Linux servers."
+                title="QUERO ME MUDAR"
+                subtitle="Portal de Moradia e Mudança"
+                description="Ferramenta web para busca e análise de imóveis para locação, custo de vida e facilidades de bairros para quem planeja mudar de cidade."
+                url="https://queromemudar.com.br/"
                 tint="sky"
+                badge-text="PROJETO"
               />
             </div>
           </div>
+
+          <!-- SECTION 3: Competências & Stack Tecnológica -->
+          <div id="competencias">
+            <VintageEyebrow
+              title="COMPETÊNCIAS & ARQUITETURA"
+              tag="ESPECIFICAÇÃO"
+              tint="periwinkle"
+            />
+
+            <div class="mt-3 space-y-3">
+              <!-- Backend & Arquitetura -->
+              <VintageRibbonCard
+                title="BACKEND & ARQUITETURA DE SOFTWARE"
+                description="Especialista em PHP (Laravel, Zend 1), JavaScript/TypeScript (Node.js, Express), Mensageria com RabbitMQ, APIs RESTful, Microsserviços, Design Patterns, SOLID, Testes e Clean Architecture."
+                tint="periwinkle"
+              />
+
+              <!-- Frontend, Desktop & Mobile -->
+              <VintageRibbonCard
+                title="FRONTEND, DESKTOP & MOBILE"
+                description="Desenvolvimento de SPAs e SSR com Vue.js, React, Alpine.js, Nuxt, TypeScript e TailwindCSS. Construção de softwares desktop multiplataforma com ElectronJs e aplicativos mobile híbridos com Ionic/Cordova."
+                tint="steel"
+              />
+
+              <!-- Banco de Dados, DevOps & Infra -->
+              <VintageRibbonCard
+                title="BANCO DE DADOS, CLOUD & INFRAESTRUTURA"
+                description="Modelagem e otimização de MySQL e SQLServer. Ambientes conteinerizados com Docker, servidores Linux (AWS, VPS, WHM), Git workflows e esteiras de CI/CD."
+                tint="olive"
+              />
+            </div>
+          </div>
+
         </section>
       </div>
     </main>
 
-    <!-- Vintage Footer with 4-Item Icon Navigation -->
+    <!-- Vintage Footer with Navigation -->
     <VintageFooter />
   </VintagePageFrame>
 </template>
@@ -150,9 +251,9 @@ import VintageRibbonCard from '~/components/vintage/VintageRibbonCard.vue';
 import VintageFooter from '~/components/vintage/VintageFooter.vue';
 
 useHead({
-  title: 'Leonardo Nadin · Full Stack Developer (1996 Edition)',
+  title: 'Leonardo Nadin · Líder Técnico & Desenvolvedor Full Stack (1996 Edition)',
   meta: [
-    { name: 'description', content: 'Leonardo Nadin - Full Stack Developer Portfolio rendered in authentic Dell 1996 catalog web design.' }
+    { name: 'description', content: 'Portfolio e currículo de Leonardo Nadin: Líder Técnico e Desenvolvedor Full Stack com mais de 10 anos de experiência em PHP, Laravel, JS, RabbitMQ e Arquitetura de Software.' }
   ]
 });
 </script>
