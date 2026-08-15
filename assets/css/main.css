@@ -2,11 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-fill-transparent {
-    -webkit-text-fill-color: transparent;
+@layer base {
+  body {
+    @apply bg-canvas text-ink font-serif;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  a {
+    @apply text-link underline;
+  }
+}
+
+.vintage-frame {
+  border: 8px solid #000000;
+}
+
+@media (max-width: 768px) {
+  .vintage-frame {
+    border-width: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vintage-frame {
+    border-width: 2px;
+  }
+}
+
+.vintage-bevel {
+  box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #000000, 1px 1px 0px #000000;
+}
+
+.vintage-bevel-button {
+  border: 1px solid #000000;
+  box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #555555;
+}
+
+.vintage-sticker-shadow {
+  filter: drop-shadow(2px 2px 0px #000000);
 }
 
 .stretched-link::after {
-    content: "";
-    @apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
+  content: "";
+  @apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
 }
