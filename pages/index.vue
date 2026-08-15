@@ -149,7 +149,7 @@
                 description="Plataforma web desenvolvida para identificar, comparar e catalogar com precisão quais aplicativos de entrega, transporte e serviços operam em cada município do Brasil. Conta com sistema de busca inteligente, filtragem dinâmica e categorização por tipo de serviço."
                 url="https://qualoapp.com.br/"
                 tint="sage"
-                badge-text="DESTAQUE"
+                badge-text="ONLINE"
               />
 
               <!-- Quero me mudar -->
@@ -159,7 +159,17 @@
                 description="Solução online projetada para auxiliar famílias e profissionais que planejam mudar de cidade a encontrar e analisar imóveis para locação, infraestrutura dos bairros, custo de vida e serviços essenciais."
                 url="https://queromemudar.com.br/"
                 tint="peach"
-                badge-text="DESTAQUE"
+                badge-text="ONLINE"
+              />
+
+              <!-- Estimômetro -->
+              <VintageRibbonCard
+                title="ESTIMÔMETRO"
+                subtitle="Planning Poker Ágil em Tempo Real"
+                description="Aplicação web interativa para estimativas de esforço e pontuação de tarefas com Planning Poker em tempo real. Facilita sessões de refinamento ágil com votação sincronizada entre equipes de desenvolvimento."
+                url="https://estimometro.leonardonadin.com.br/"
+                tint="lime"
+                badge-text="NOVO"
               />
 
               <!-- Artigos & Conteúdo Técnico -->
