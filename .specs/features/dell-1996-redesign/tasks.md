@@ -80,9 +80,9 @@ T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Color tokens added for `frame-ink`, `canvas`, `ink`, `primary`, `yellow-sticker`, `purple-stripe`, `link`, and tint family (`tint-olive`, `tint-sage`, `tint-salmon`, `tint-peach`, `tint-lime`, `tint-sky`, `tint-steel`, `tint-periwinkle`)
-- [ ] Font families configured for `display` (Arial Black), `ui` (Helvetica), and `serif` (Times New Roman)
-- [ ] Gate check passes: `npm run build`
+- [x] Color tokens added for `frame-ink`, `canvas`, `ink`, `primary`, `yellow-sticker`, `purple-stripe`, `link`, and tint family (`tint-olive`, `tint-sage`, `tint-salmon`, `tint-peach`, `tint-lime`, `tint-sky`, `tint-steel`, `tint-periwinkle`)
+- [x] Font families configured for `display` (Arial Black), `ui` (Helvetica), and `serif` (Times New Roman)
+- [x] Gate check passes: `npm run build`
 
 **Tests**: none
 **Gate**: build
@@ -102,9 +102,9 @@ T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Global background and base font set to Times New Roman and crisp border rules
-- [ ] Bevel sticker and ribbon divider utility classes defined
-- [ ] Gate check passes: `npm run build`
+- [x] Global background and base font set to Times New Roman and crisp border rules
+- [x] Bevel sticker and ribbon divider utility classes defined
+- [x] Gate check passes: `npm run build`
 
 **Tests**: none
 **Gate**: quick
@@ -124,9 +124,9 @@ T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Banner renders title, subtitle, sticker badge, and contact highlight
-- [ ] Layout scales border width gracefully on mobile
-- [ ] Gate check passes: `npm run build`
+- [x] Banner renders title, subtitle, sticker badge, and contact highlight
+- [x] Layout scales border width gracefully on mobile
+- [x] Gate check passes: `npm run build`
 
 **Tests**: none
 **Gate**: quick
@@ -146,9 +146,9 @@ T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Red CTA panel displays white serif text with 1px black border
-- [ ] Section eyebrow renders bold display typography on solid tint background
-- [ ] Gate check passes: `npm run build`
+- [x] Red CTA panel displays white serif text with 1px black border
+- [x] Section eyebrow renders bold display typography on solid tint background
+- [x] Gate check passes: `npm run build`
 
 **Tests**: none
 **Gate**: quick
@@ -168,9 +168,9 @@ T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Renders title bar with 1px border and tinted body background based on prop
-- [ ] External link and optional NEW! sticker badge render properly
-- [ ] Gate check passes: `npm run build`
+- [x] Renders title bar with 1px border and tinted body background based on prop
+- [x] External link and optional NEW! sticker badge render properly
+- [x] Gate check passes: `npm run build`
 
 **Tests**: none
 **Gate**: quick
@@ -190,10 +190,10 @@ T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Homepage renders complete two-column layout on desktop and single-column on mobile
-- [ ] Leonardo Nadin's projects, social links, and bio are populated
-- [ ] Footer icon nav and period browser compatibility disclaimer are present
-- [ ] Gate check passes: `npm run build`
+- [x] Homepage renders complete two-column layout on desktop and single-column on mobile
+- [x] Leonardo Nadin's projects, social links, and bio are populated
+- [x] Footer icon nav and period browser compatibility disclaimer are present
+- [x] Gate check passes: `npm run build`
 
 **Tests**: none
 **Gate**: full

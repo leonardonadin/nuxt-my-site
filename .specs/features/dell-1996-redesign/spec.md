@@ -6,9 +6,9 @@ The personal website currently uses a generic modern slate-900 template that doe
 
 ## Goals
 
-- [ ] Implement the Dell 1996 aesthetic complete with outer black page frame, top banner with yellow sticker and red phone callout, and footer band.
-- [ ] Render developer information and featured projects (Qual o App?, Quero me mudar) inside authentic color-block ribbon cards.
-- [ ] Ensure fully responsive adaptation down to mobile viewports while preserving period-accurate typography (Arial Black, Helvetica Bold, Times New Roman) and styling rules (no soft shadows, no gradients).
+- [x] Implement the Dell 1996 aesthetic complete with outer black page frame, top banner with yellow sticker and red phone callout, and footer band.
+- [x] Render developer information and featured projects (Qual o App?, Quero me mudar) inside authentic color-block ribbon cards.
+- [x] Ensure fully responsive adaptation down to mobile viewports while preserving period-accurate typography (Arial Black, Helvetica Bold, Times New Roman) and styling rules (no soft shadows, no gradients).
 
 ## Out of Scope
 
@@ -92,17 +92,17 @@ The personal website currently uses a generic modern slate-900 template that doe
 
 | Requirement ID | Story | Phase | Status |
 | --- | --- | --- | --- |
-| DELL-01 | P1: Core Vintage Shell & Page Frame | Design | Pending |
-| DELL-02 | P1: Core Vintage Shell & Page Frame | Design | Pending |
-| DELL-03 | P1: Core Vintage Shell & Page Frame | Design | Pending |
-| DELL-04 | P2: Portfolio Content & Color-Block Ribbon Cards | Design | Pending |
-| DELL-05 | P2: Portfolio Content & Color-Block Ribbon Cards | Design | Pending |
-| DELL-06 | P3: Period Navigation & Footer Band | Design | Pending |
+| DELL-01 | P1: Core Vintage Shell & Page Frame | Complete | Verified |
+| DELL-02 | P1: Core Vintage Shell & Page Frame | Complete | Verified |
+| DELL-03 | P1: Core Vintage Shell & Page Frame | Complete | Verified |
+| DELL-04 | P2: Portfolio Content & Color-Block Ribbon Cards | Complete | Verified |
+| DELL-05 | P2: Portfolio Content & Color-Block Ribbon Cards | Complete | Verified |
+| DELL-06 | P3: Period Navigation & Footer Band | Complete | Verified |
 
 ---
 
 ## Success Criteria
 
-- [ ] Homepage fully adopts the Dell 1996 aesthetic from [DESIGN.md](file:///home/leonadin/dev/nuxt-my-site/DESIGN.md) without modern gradients or rounded soft cards.
-- [ ] Projects, profile information, and social links are fully accessible and interactive.
-- [ ] Responsive layout adapts cleanly across desktop, tablet, and mobile screens.
+- [x] Homepage fully adopts the Dell 1996 aesthetic from [DESIGN.md](file:///home/leonadin/dev/nuxt-my-site/DESIGN.md) without modern gradients or rounded soft cards.
+- [x] Projects, profile information, and social links are fully accessible and interactive.
+- [x] Responsive layout adapts cleanly across desktop, tablet, and mobile screens.
