@@ -1,23 +1,22 @@
 <template>
   <VintagePageFrame>
-    <!-- Top Black Banner with Vintage Badge & Contact Email -->
+    <!-- Top Black Banner with Vintage Badge & Location -->
     <VintageBanner
       title="LEONARDO NADIN"
       subtitle="LÍDER TÉCNICO · DESENVOLVEDOR FULL STACK · LARAVEL · JS"
-      email="leo.nadin@hotmail.com.br"
     />
 
     <!-- Main Content Area: 2-Column Catalog Layout -->
     <main class="flex-1 p-3 sm:p-4 md:p-6">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start">
         
-        <!-- LEFT RAIL (~33% / 4 columns on md) -->
+        <!-- LEFT RAIL (~35% / 4 columns on md) -->
         <aside class="md:col-span-4 space-y-4">
           <!-- Profile & Location Box -->
           <div class="border border-frame-ink bg-canvas p-3">
             <div class="bg-frame-ink text-white px-2 py-1 font-ui font-bold text-xs uppercase mb-2 flex items-center justify-between">
               <span>SYSTEM OPERATOR</span>
-              <span class="text-yellow-sticker text-[10px]">VER. 1996</span>
+              <span class="text-yellow-sticker text-[10px]">VER. 1995</span>
             </div>
             
             <div class="space-y-1 mb-3">
@@ -32,42 +31,34 @@
               </p>
             </div>
 
-            <!-- Directory Links Grid -->
-            <div class="grid grid-cols-2 gap-1 font-ui text-xs font-bold pt-2 border-t border-gray-300">
+            <!-- Directory Links Grid (No email) -->
+            <div class="grid grid-cols-3 gap-1 font-ui text-xs font-bold pt-2 border-t border-gray-300">
               <a
                 href="https://www.linkedin.com/in/leonardonadin/"
                 target="_blank"
-                class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
+                class="flex flex-col items-center justify-center p-1.5 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline text-center"
                 title="LinkedIn"
               >
-                <Icon name="uil:linkedin" size="1.1em" />
-                <span>LINKEDIN</span>
+                <Icon name="uil:linkedin" size="1.2em" />
+                <span class="text-[10px] mt-0.5">LINKEDIN</span>
               </a>
               <a
                 href="https://github.com/leonardonadin"
                 target="_blank"
-                class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
+                class="flex flex-col items-center justify-center p-1.5 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline text-center"
                 title="GitHub"
               >
-                <Icon name="uil:github" size="1.1em" />
-                <span>GITHUB</span>
+                <Icon name="uil:github" size="1.2em" />
+                <span class="text-[10px] mt-0.5">GITHUB</span>
               </a>
               <a
                 href="https://medium.com/@nadin.leonardo"
                 target="_blank"
-                class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
+                class="flex flex-col items-center justify-center p-1.5 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline text-center"
                 title="Medium Blog"
               >
-                <Icon name="uil:medium-m" size="1.1em" />
-                <span>BLOG</span>
-              </a>
-              <a
-                href="mailto:leo.nadin@hotmail.com.br"
-                class="flex items-center gap-1 p-1 bg-gray-100 border border-frame-ink hover:bg-yellow-sticker text-ink no-underline"
-                title="Enviar E-mail"
-              >
-                <Icon name="uil:envelope" size="1.1em" />
-                <span>E-MAIL</span>
+                <Icon name="uil:medium-m" size="1.2em" />
+                <span class="text-[10px] mt-0.5">BLOG</span>
               </a>
             </div>
           </div>
@@ -139,96 +130,56 @@
           </div>
         </aside>
 
-        <!-- RIGHT RAIL (~67% / 8 columns on md) -->
+        <!-- RIGHT RAIL (~65% / 8 columns on md) -->
         <section class="md:col-span-8 space-y-6">
           
-          <!-- SECTION 1: Experiência Profissional -->
-          <div id="experiencia">
-            <VintageEyebrow
-              title="EXPERIÊNCIA PROFISSIONAL"
-              tag="TRAJETÓRIA"
-              tint="olive"
-            />
-            
-            <div class="mt-3 space-y-3">
-              <!-- IXC Soft -->
-              <VintageRibbonCard
-                title="IXC SOFT"
-                subtitle="Líder Técnico & Desenvolvedor de Sistemas · 2024 - Presente · Chapecó/SC"
-                description="Atuação como Líder Técnico (Jan/2026 - Presente) e Desenvolvedor de Sistemas (Jul/2024 - Presente). Liderança técnica de equipes de desenvolvimento, sustentação e evolução de sistemas robustos, definição de padrões de arquitetura, mensageria e otimização de performance."
-                tint="sage"
-                badge-text="ATUAL"
-              />
-
-              <!-- Alcance Tecnologia -->
-              <VintageRibbonCard
-                title="ALCANCE TECNOLOGIA"
-                subtitle="Desenvolvedor Full Stack · 2014 - 2024 (10 anos 1 mês)"
-                description="Uma década de liderança e desenvolvimento full stack: construção de sistemas web e e-commerces em Laravel integrados a ERPs, gateways de pagamento e frete; REST APIs; interfaces em Vue, React e Alpine.js; apps Desktop em Electron com SQLServer; mobile em Ionic; treinamento e mentoria de novos colaboradores; manutenção de bancos MySQL e servidores Linux (AWS, VPS, cPanel)."
-                tint="peach"
-              />
-            </div>
-          </div>
-
-          <!-- SECTION 2: Projetos em Destaque -->
+          <!-- SEÇÃO PRINCIPAL: APLICAÇÕES & PROJETOS EM DESTAQUE -->
           <div id="projetos">
             <VintageEyebrow
               title="APLICAÇÕES & PROJETOS"
-              tag="PORTFOLIO"
-              tint="salmon"
+              tag="CATÁLOGO 1995"
+              tint="olive"
             />
             
-            <div class="mt-3 space-y-3">
+            <div class="mt-3 space-y-4">
               <!-- Qual o App? -->
               <VintageRibbonCard
                 title="QUAL O APP?"
-                subtitle="Guia de Aplicativos por Cidade"
-                description="Plataforma que identifica e categoriza quais aplicativos de transporte, delivery e serviços operam em cada cidade do Brasil, com busca inteligente e dados geo-localizados."
+                subtitle="Guia Completo de Aplicativos por Cidade"
+                description="Plataforma web desenvolvida para identificar, comparar e catalogar com precisão quais aplicativos de entrega, transporte e serviços operam em cada município do Brasil. Conta com sistema de busca inteligente, filtragem dinâmica e categorização por tipo de serviço."
                 url="https://qualoapp.com.br/"
-                tint="lime"
-                badge-text="PROJETO"
+                tint="sage"
+                badge-text="DESTAQUE"
               />
 
               <!-- Quero me mudar -->
               <VintageRibbonCard
                 title="QUERO ME MUDAR"
-                subtitle="Portal de Moradia e Mudança"
-                description="Ferramenta web para busca e análise de imóveis para locação, custo de vida e facilidades de bairros para quem planeja mudar de cidade."
+                subtitle="Portal e Análise de Imóveis para Mudança"
+                description="Solução online projetada para auxiliar famílias e profissionais que planejam mudar de cidade a encontrar e analisar imóveis para locação, infraestrutura dos bairros, custo de vida e serviços essenciais."
                 url="https://queromemudar.com.br/"
-                tint="sky"
-                badge-text="PROJETO"
+                tint="peach"
+                badge-text="DESTAQUE"
               />
-            </div>
-          </div>
 
-          <!-- SECTION 3: Competências & Stack Tecnológica -->
-          <div id="competencias">
-            <VintageEyebrow
-              title="COMPETÊNCIAS & ARQUITETURA"
-              tag="ESPECIFICAÇÃO"
-              tint="periwinkle"
-            />
-
-            <div class="mt-3 space-y-3">
-              <!-- Backend & Arquitetura -->
+              <!-- Artigos & Conteúdo Técnico -->
               <VintageRibbonCard
-                title="BACKEND & ARQUITETURA DE SOFTWARE"
-                description="Especialista em PHP (Laravel, Zend 1), JavaScript/TypeScript (Node.js, Express), Mensageria com RabbitMQ, APIs RESTful, Microsserviços, Design Patterns, SOLID, Testes e Clean Architecture."
+                title="PUBLICAÇÕES & ARTIGOS TÉCNICOS"
+                subtitle="Medium Blog"
+                description="Artigos e reflexões sobre engenharia de software, desenvolvimento backend com PHP/Laravel, JavaScript moderno, padrões arquiteturais e soluções práticas para o ecossistema web."
+                url="https://medium.com/@nadin.leonardo"
                 tint="periwinkle"
+                badge-text="BLOG"
               />
 
-              <!-- Frontend, Desktop & Mobile -->
+              <!-- Código Aberto & Repositórios -->
               <VintageRibbonCard
-                title="FRONTEND, DESKTOP & MOBILE"
-                description="Desenvolvimento de SPAs e SSR com Vue.js, React, Alpine.js, Nuxt, TypeScript e TailwindCSS. Construção de softwares desktop multiplataforma com ElectronJs e aplicativos mobile híbridos com Ionic/Cordova."
-                tint="steel"
-              />
-
-              <!-- Banco de Dados, DevOps & Infra -->
-              <VintageRibbonCard
-                title="BANCO DE DADOS, CLOUD & INFRAESTRUTURA"
-                description="Modelagem e otimização de MySQL e SQLServer. Ambientes conteinerizados com Docker, servidores Linux (AWS, VPS, WHM), Git workflows e esteiras de CI/CD."
-                tint="olive"
+                title="CÓDIGO ABERTO & EXPERIMENTOS"
+                subtitle="GitHub Projects"
+                description="Repositórios com projetos públicos, integrações de APIs, boilerplates, bibliotecas utilitárias e contribuições para a comunidade open source."
+                url="https://github.com/leonardonadin"
+                tint="sky"
+                badge-text="GITHUB"
               />
             </div>
           </div>
@@ -251,9 +202,9 @@ import VintageRibbonCard from '~/components/vintage/VintageRibbonCard.vue';
 import VintageFooter from '~/components/vintage/VintageFooter.vue';
 
 useHead({
-  title: 'Leonardo Nadin · Líder Técnico & Desenvolvedor Full Stack (1996 Edition)',
+  title: 'Leonardo Nadin · Líder Técnico & Desenvolvedor Full Stack (1995 Edition)',
   meta: [
-    { name: 'description', content: 'Portfolio e currículo de Leonardo Nadin: Líder Técnico e Desenvolvedor Full Stack com mais de 10 anos de experiência em PHP, Laravel, JS, RabbitMQ e Arquitetura de Software.' }
+    { name: 'description', content: 'Portfolio de Leonardo Nadin: Líder Técnico e Desenvolvedor Full Stack com mais de 10 anos de experiência em PHP, Laravel, JS e Arquitetura de Software.' }
   ]
 });
 </script>

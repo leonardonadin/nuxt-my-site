@@ -11,23 +11,21 @@
         </p>
       </div>
 
-      <!-- Right Action Group (Badge Sticker + Contact) -->
+      <!-- Right Action Group (Badge Sticker + Location Callout) -->
       <div class="flex items-center gap-3 flex-wrap justify-center">
-        <!-- Vintage Retro Badge Sticker (non-hiring) -->
+        <!-- Vintage Retro Badge Sticker 1995 -->
         <div class="bg-yellow-sticker text-ink px-2 py-1 border border-frame-ink font-ui font-bold text-xs uppercase flex items-center shadow-[1px_1px_0px_#000000]">
           <span>LEONARDO</span>
           <span class="bg-purple-stripe text-white px-1 ml-1 text-[10px] tracking-tight">.COM</span>
-          <span class="ml-1 font-black">1996</span>
+          <span class="ml-1 font-black">1995</span>
         </div>
 
-        <!-- Contact Email / Location Callout -->
-        <a
-          :href="`mailto:${email}`"
-          class="font-ui font-bold text-xs sm:text-sm text-primary hover:text-red-400 no-underline whitespace-nowrap bg-black px-2 py-0.5 border border-primary"
-          :title="`Enviar e-mail para ${email}`"
+        <!-- Location Callout -->
+        <span
+          class="font-ui font-bold text-xs sm:text-sm text-primary whitespace-nowrap bg-black px-2 py-0.5 border border-primary uppercase"
         >
-          {{ email }}
-        </a>
+          CHAPECÓ &bull; SC
+        </span>
       </div>
     </div>
   </header>
@@ -37,12 +35,10 @@
 interface Props {
   title?: string;
   subtitle?: string;
-  email?: string;
 }
 
 withDefaults(defineProps<Props>(), {
   title: 'LEONARDO NADIN',
-  subtitle: 'LÍDER TÉCNICO · DESENVOLVEDOR FULL STACK · LARAVEL · JS',
-  email: 'leo.nadin@hotmail.com.br'
+  subtitle: 'LÍDER TÉCNICO · DESENVOLVEDOR FULL STACK · LARAVEL · JS'
 });
 </script>
